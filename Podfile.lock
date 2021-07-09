@@ -29,7 +29,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AMPopTip
     - BetterSegmentedControl
     - BubbleTransition
@@ -57,4 +57,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 15cffc7111a818a795112b8a63f0af3ab2036173
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.10.1
