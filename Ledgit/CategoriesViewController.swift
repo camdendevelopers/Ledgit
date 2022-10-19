@@ -98,7 +98,7 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.categoryName, for: indexPath) as! CategoryTableViewCell //swiftlint:disable:this force_cast
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.categoryName, for: indexPath) as! CategoryTableViewCell // swiftlint:disable:this force_cast
         cell.titleLabel.text(presenter?.categories[indexPath.row])
 
         if indexPath.row == tableView.lastRow() && !displayedInformationLabel {

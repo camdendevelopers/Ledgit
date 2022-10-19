@@ -11,7 +11,7 @@ import CoreData
 
 typealias ErrorDictionary = [String:String]
 
-protocol AuthenticationManagerDelegate: class {
+protocol AuthenticationManagerDelegate: AnyObject {
     func userAuthenticated(_ user: LedgitUser)
     func authenticationError(_ error: LedgitError)
 }

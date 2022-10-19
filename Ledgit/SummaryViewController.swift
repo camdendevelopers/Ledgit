@@ -314,12 +314,11 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
 
         let xFormat = BarChartXAxisFormatter(labels: weekdays)
 
-        let dataFormat = NumberFormatter()
-        dataFormat.numberStyle = .currency
-        dataFormat.allowsFloats = false
-        dataFormat.zeroSymbol = ""
-        dataFormat.currencySymbol = LedgitUser.current.homeCurrency.symbol
-        let dataFormatter = DefaultValueFormatter(formatter: dataFormat)
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.allowsFloats = false
+        currencyFormatter.zeroSymbol = ""
+        currencyFormatter.currencySymbol = LedgitUser.current.homeCurrency.symbol
 
         let xAxis: XAxis = weeklyChart.xAxis
         xAxis.labelPosition = .bottom
@@ -332,24 +331,22 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
         let leftAxis: YAxis = weeklyChart.leftAxis
         leftAxis.labelFont = .futuraMedium8
         leftAxis.labelPosition = .outsideChart
-        leftAxis.valueFormatter = DefaultAxisValueFormatter(formatter: dataFormat)
+        leftAxis.valueFormatter = DefaultAxisValueFormatter(formatter: currencyFormatter)
         leftAxis.drawGridLinesEnabled = false
-        leftAxis.gridColor = LedgitColor.navigationBarGray
-        leftAxis.gridLineWidth = 1.0
 
-        let dataSet = BarChartDataSet(values: values, label: nil)
+        let dataSet = BarChartDataSet(entries: values)
         dataSet.colors = [LedgitColor.coreBlue]
 
         let data = BarChartData(dataSet: dataSet)
-        data.setValueFormatter(dataFormatter)
+        data.setValueFormatter(BarChartValueFormatter(formatter: currencyFormatter))
         data.setValueFont(.futuraMedium8)
 
         weeklyChart.data = data
         weeklyChart.rightAxis.enabled = false
         weeklyChart.leftAxis.enabled = false
         weeklyChart.legend.enabled = false
-        weeklyChart.chartDescription = nil
         weeklyChart.highlightPerTapEnabled = false
+        weeklyChart.fitBars = false
     }
 
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -359,7 +356,7 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
 }
 
 extension SummaryViewController {
-    class BarChartXAxisFormatter: NSObject, IAxisValueFormatter {
+    class BarChartXAxisFormatter: NSObject, AxisValueFormatter {
         var labels: [String] = []
 
         func stringForValue(_ value: Double, axis: AxisBase?) -> String {
@@ -369,6 +366,20 @@ extension SummaryViewController {
         init(labels: [String]) {
             super.init()
             self.labels = labels
+        }
+    }
+
+    final class BarChartValueFormatter: ValueFormatter {
+        private let formatter: NumberFormatter
+
+        required init(formatter: NumberFormatter) {
+            self.formatter = formatter
+        }
+
+        func stringForValue(_ value: Double, entry: Charts.ChartDataEntry, dataSetIndex: Int, viewPortHandler: Charts.ViewPortHandler?) -> String {
+            if entry.y == 0 { return "" }
+
+            return formatter.string(from: NSNumber(value: entry.y)) ?? ""
         }
     }
 }

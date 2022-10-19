@@ -55,7 +55,7 @@ extension LedgitError { // Client Side Errors
                                                message: "We had some trouble getting your entry details. Try again later.")
 }
 
-extension LedgitError { //Authentication errors
+extension LedgitError { // Authentication errors
     static let coreDataFault = LedgitError(title: "Error",
                                            message: "Could not create your initial account. Sorry about that!")
 

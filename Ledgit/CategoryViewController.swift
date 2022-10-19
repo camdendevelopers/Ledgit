@@ -54,7 +54,6 @@ class CategoryViewController: UIViewController, ChartViewDelegate {
         pieChart.noDataFont = .futuraMedium14
         pieChart.noDataTextColor = LedgitColor.coreBlue
         pieChart.drawEntryLabelsEnabled = false
-        pieChart.chartDescription = nil
         pieChart.usePercentValuesEnabled = true
         pieChart.drawSlicesUnderHoleEnabled = false
         pieChart.holeRadiusPercent = 0.6
@@ -114,11 +113,10 @@ class CategoryViewController: UIViewController, ChartViewDelegate {
             legend.textColor = LedgitColor.navigationTextGray
         }
 
-        let dataSet = PieChartDataSet(values: values, label: nil)
+        let dataSet = PieChartDataSet(entries: values)
         dataSet.yValuePosition = .insideSlice
-        dataSet.drawIconsEnabled = false
         dataSet.sliceSpace = 2.0
-        dataSet.entryLabelColor = .white
+        dataSet.entryLabelColor = .label
         dataSet.colors = [LedgitColor.pieChartLightPurple,
                           LedgitColor.pieChartDarkGray,
                           LedgitColor.pieChartBlue1,

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TripsPresenterDelegate: class {
+protocol TripsPresenterDelegate: AnyObject {
     func retrievedSampleTrip()
     func retrievedTrip()
     func addedTrip()

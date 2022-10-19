@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CollapsibleDateHeaderViewDelegate: class {
+protocol CollapsibleDateHeaderViewDelegate: AnyObject {
     func toggleSection(_ header: CollapsibleDateHeaderView, section: Int)
 }
 

@@ -50,6 +50,7 @@ class TripDetailViewController: UIViewController {
         let historySegment = LabelSegment(text: "History", normalFont: .futuraMedium16, normalTextColor: LedgitColor.separatorGray,
                                           selectedFont: .futuraMedium16, selectedTextColor: LedgitColor.coreBlue)
 
+        pageSegmentedControl.setOptions([.cornerRadius(8)])
         pageSegmentedControl.segments = [summarySegment, categorySegment, historySegment]
         pageSegmentedControl.addTarget(self, action: #selector(segmentedControlChanged), for: .valueChanged)
     }
@@ -115,7 +116,7 @@ class TripDetailViewController: UIViewController {
 
         startLoading()
 
-        //Set the default sharing message.
+        // Set the default sharing message.
         guard let trip = currentTrip else {
             LedgitLog.warning("Tried to begin export process, but no trip available")
             return
@@ -148,7 +149,11 @@ class TripDetailViewController: UIViewController {
         guard let controller = pageViewController.viewControllers?.first, var index = pages.firstIndex(where: { controller ==  $0 }) else { return }
 
         while upcomingIndex != index {
-            upcomingIndex < index ? goToPreviousPage() : goToNextPage()
+            if upcomingIndex < index {
+                goToPreviousPage()
+            } else {
+                goToNextPage()
+            }
             index += upcomingIndex < index ? -1 : 1
         }
     }
@@ -218,7 +223,7 @@ extension TripDetailViewController: UIPageViewControllerDelegate, UIPageViewCont
         // 2. If yes, update the page control current indicator to change to index
         guard let controller = pageViewController.viewControllers?.first, let index = pages.firstIndex(where: { controller ==  $0 }) else { return }
 
-        pageSegmentedControl.setIndex(UInt(index), animated: true)
+        pageSegmentedControl.setIndex(index, animated: true)
     }
 
     func goToNextPage() {

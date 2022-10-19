@@ -100,7 +100,7 @@ extension TripsViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.trip, for: indexPath) as! TripTableViewCell //swiftlint:disable:this force_cast
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.trip, for: indexPath) as! TripTableViewCell // swiftlint:disable:this force_cast
         let trip = presenter.trips[indexPath.section]
         cell.configure(with: trip, at: indexPath)
 

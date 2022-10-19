@@ -16,9 +16,9 @@ class MainViewController: UIViewController {
     // so there is no need to get members to authenticate.
     // Not removing the IBOutlets/IBAction declarations in
     // case I want to add them back later
-    //@IBOutlet weak var signupButton: UIButton!
-    //@IBOutlet weak var signinButton: UIButton!
-    //@IBOutlet weak var exploreButton: UIButton!
+    // @IBOutlet weak var signupButton: UIButton!
+    // @IBOutlet weak var signinButton: UIButton!
+    // @IBOutlet weak var exploreButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var tutorialView: UIView!
@@ -49,8 +49,8 @@ class MainViewController: UIViewController {
         startButton.roundedCorners(radius: Constants.CornerRadius.button)
 
         // NOTE: Look at the note at the top of the file
-        //signupButton.roundedCorners(radius: Constants.cornerRadius.button)
-        ///signinButton.roundedCorners(radius: Constants.cornerRadius.button, borderColor: LedgitColor.coreBlue)
+        // signupButton.roundedCorners(radius: Constants.cornerRadius.button)
+        // signinButton.roundedCorners(radius: Constants.cornerRadius.button, borderColor: LedgitColor.coreBlue)
     }
 
     func setupPageViewController() {

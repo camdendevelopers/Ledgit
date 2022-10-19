@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol TripSelectionDelegate: class {
+protocol TripSelectionDelegate: AnyObject {
     func selected(_ trip: LedgitTrip)
 }
 

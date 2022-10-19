@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-protocol SettingsManagerDelegate: class {
+protocol SettingsManagerDelegate: AnyObject {
     func signedout(_ result: SignoutResult)
     func retrieved(_ categories: [String])
     func added(_ category: String)

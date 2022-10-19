@@ -10,7 +10,7 @@ import UIKit
 import SkyFloatingLabelTextField
 import NotificationBannerSwift
 
-protocol TripActionDelegate: class {
+protocol TripActionDelegate: AnyObject {
     func added(trip dict: NSDictionary)
     func edited(_ trip: LedgitTrip)
 }
@@ -288,7 +288,7 @@ class TripActionViewController: UIViewController {
 
 extension TripActionViewController: UITextFieldDelegate {
     @objc func keyboardWillShow(notification: NSNotification) {
-        //give room at the bottom of the scroll view, so it doesn't cover up anything the user needs to tap
+        // give room at the bottom of the scroll view, so it doesn't cover up anything the user needs to tap
         guard let info = notification.userInfo else { return }
         guard let keyboard = info[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else { return }
 
