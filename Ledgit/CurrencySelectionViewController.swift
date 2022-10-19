@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CurrencySelectionDelegate: class {
+protocol CurrencySelectionDelegate: AnyObject {
     func selected(_ currencies: [LedgitCurrency])
 }
 
@@ -79,7 +79,7 @@ extension CurrencySelectionViewController: UITableViewDelegate, UITableViewDataS
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let visibleCurrencies = limitedCurrencies ?? LedgitCurrency.all
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.currency, for: indexPath) as! CurrencyTableViewCell //swiftlint:disable:this force_cast
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.currency, for: indexPath) as! CurrencyTableViewCell // swiftlint:disable:this force_cast
         let currency = !filteredCurrencies.isEmpty ? filteredCurrencies[indexPath.row] : visibleCurrencies[indexPath.row]
 
         cell.configure(with: currency)
@@ -94,7 +94,7 @@ extension CurrencySelectionViewController: UITableViewDelegate, UITableViewDataS
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! CurrencyTableViewCell //swiftlint:disable:this force_cast
+        let cell = tableView.cellForRow(at: indexPath) as! CurrencyTableViewCell // swiftlint:disable:this force_cast
         let visibleCurrencies = limitedCurrencies ?? LedgitCurrency.all
         let selectedCurrency = !filteredCurrencies.isEmpty ? filteredCurrencies[indexPath.row] : visibleCurrencies[indexPath.row]
 

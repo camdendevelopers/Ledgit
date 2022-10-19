@@ -337,7 +337,7 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
         leftAxis.gridColor = LedgitColor.navigationBarGray
         leftAxis.gridLineWidth = 1.0
 
-        let dataSet = BarChartDataSet(values: values, label: nil)
+        let dataSet = BarChartDataSet(entries: values)
         dataSet.colors = [LedgitColor.coreBlue]
 
         let data = BarChartData(dataSet: dataSet)
@@ -348,7 +348,6 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
         weeklyChart.rightAxis.enabled = false
         weeklyChart.leftAxis.enabled = false
         weeklyChart.legend.enabled = false
-        weeklyChart.chartDescription = nil
         weeklyChart.highlightPerTapEnabled = false
     }
 
@@ -359,7 +358,7 @@ class SummaryViewController: UIViewController, ChartViewDelegate {
 }
 
 extension SummaryViewController {
-    class BarChartXAxisFormatter: NSObject, IAxisValueFormatter {
+    class BarChartXAxisFormatter: NSObject, AxisValueFormatter {
         var labels: [String] = []
 
         func stringForValue(_ value: Double, axis: AxisBase?) -> String {

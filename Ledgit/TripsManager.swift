@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-protocol TripsManagerDelegate: class {
+protocol TripsManagerDelegate: AnyObject {
     func retrievedSampleTrip(_ trip: LedgitTrip)
     func retrievedTrip(_ trip: LedgitTrip)
     func addedTrip(_ trip: LedgitTrip)

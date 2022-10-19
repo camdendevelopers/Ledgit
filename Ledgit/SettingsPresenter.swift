@@ -13,11 +13,11 @@ enum SignoutResult {
     case failure(Error)
 }
 
-protocol SettingsPresenterDelegate: class {
+protocol SettingsPresenterDelegate: AnyObject {
     func signedout()
 }
 
-protocol SettingsPresenterCategoryDelegate: class {
+protocol SettingsPresenterCategoryDelegate: AnyObject {
     func retrievedCategories()
     func addedCategory()
     func updatedCategory()

@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AEC39872D7A188B128C430A /* Pods_LedgitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB21902AE594012FF148F96 /* Pods_LedgitTests.framework */; };
-		5FA2B0A65D5BA7817E8BA1AB /* Pods_Ledgit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 440E18801682C6FA72C78822 /* Pods_Ledgit.framework */; };
 		8D171ED5201EAD370058891E /* CollapsibleDateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D171ED4201EAD370058891E /* CollapsibleDateHeaderView.swift */; };
 		8D173EBF1F997B4100EC8527 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D173EBE1F997B4100EC8527 /* AuthenticationPresenter.swift */; };
 		8D173EC31F99803400EC8527 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D173EC21F99803400EC8527 /* AuthenticationManager.swift */; };
@@ -29,6 +27,14 @@
 		8D4E68252228EDC3009939BE /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E68242228EDC3009939BE /* HistoryViewController.swift */; };
 		8D4E6827222CB47A009939BE /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E6826222CB47A009939BE /* Result.swift */; };
 		8D4E684B2230B49A009939BE /* LedgitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E684A2230B49A009939BE /* LedgitUITests.swift */; };
+		8D62DDC328FFB3860099CD60 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62DDC228FFB3860099CD60 /* SwiftDate */; };
+		8D62DDC628FFB39E0099CD60 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62DDC528FFB39E0099CD60 /* NVActivityIndicatorView */; };
+		8D62DDC928FFB3C60099CD60 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62DDC828FFB3C60099CD60 /* NotificationBannerSwift */; };
+		8D62DDCC28FFB3E70099CD60 /* BubbleTransition in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62DDCB28FFB3E70099CD60 /* BubbleTransition */; };
+		8D62DDCF28FFB4070099CD60 /* AMPopTip in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62DDCE28FFB4070099CD60 /* AMPopTip */; };
+		8D62DDD228FFB42D0099CD60 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62DDD128FFB42D0099CD60 /* Charts */; };
+		8D62DDD528FFB4550099CD60 /* BetterSegmentedControl in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62DDD428FFB4550099CD60 /* BetterSegmentedControl */; };
+		8D62DDD828FFB4810099CD60 /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 8D62DDD728FFB4810099CD60 /* SkyFloatingLabelTextField */; };
 		8D656AA31F94480800C85A0F /* EntryActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D656AA21F94480800C85A0F /* EntryActionViewController.swift */; };
 		8D6F4B641F4E8CFC0046847C /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4B631F4E8CFC0046847C /* CategoriesViewController.swift */; };
 		8D6F4B661F4E8D050046847C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6F4B651F4E8D050046847C /* AccountViewController.swift */; };
@@ -113,10 +119,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		31B35902AAD4A6860DB0AC73 /* Pods-Ledgit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledgit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ledgit/Pods-Ledgit.release.xcconfig"; sourceTree = "<group>"; };
-		440E18801682C6FA72C78822 /* Pods_Ledgit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ledgit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EB21902AE594012FF148F96 /* Pods_LedgitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LedgitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8521A36C51FB5EBE2134AD85 /* Pods_LedgitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LedgitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D171ED4201EAD370058891E /* CollapsibleDateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleDateHeaderView.swift; sourceTree = "<group>"; };
 		8D173EBE1F997B4100EC8527 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		8D173EC21F99803400EC8527 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
@@ -207,11 +209,6 @@
 		8DFAE89C1FCB104C00B4734B /* TripDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailPresenter.swift; sourceTree = "<group>"; };
 		8DFAE89E1FCB9B1500B4734B /* CategorySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionViewController.swift; sourceTree = "<group>"; };
 		8DFC1CFE22A348A000086E0A /* LedgitExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgitExchangeRate.swift; sourceTree = "<group>"; };
-		93C41B92AC4C35C569819F18 /* Pods-LedgitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LedgitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LedgitUITests/Pods-LedgitUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AA493BC4D136EA66D5B690DD /* Pods-LedgitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LedgitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LedgitUITests/Pods-LedgitUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		CD08D377859521F30867A19F /* Pods-LedgitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LedgitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LedgitTests/Pods-LedgitTests.release.xcconfig"; sourceTree = "<group>"; };
-		F29C3F89F31358098A8B0B37 /* Pods-LedgitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LedgitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LedgitTests/Pods-LedgitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F8E6204D85EEE0A99523E00F /* Pods-Ledgit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ledgit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ledgit/Pods-Ledgit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,7 +223,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FA2B0A65D5BA7817E8BA1AB /* Pods_Ledgit.framework in Frameworks */,
+				8D62DDC328FFB3860099CD60 /* SwiftDate in Frameworks */,
+				8D62DDD528FFB4550099CD60 /* BetterSegmentedControl in Frameworks */,
+				8D62DDC928FFB3C60099CD60 /* NotificationBannerSwift in Frameworks */,
+				8D62DDD228FFB42D0099CD60 /* Charts in Frameworks */,
+				8D62DDCF28FFB4070099CD60 /* AMPopTip in Frameworks */,
+				8D62DDCC28FFB3E70099CD60 /* BubbleTransition in Frameworks */,
+				8D62DDC628FFB39E0099CD60 /* NVActivityIndicatorView in Frameworks */,
+				8D62DDD828FFB4810099CD60 /* SkyFloatingLabelTextField in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,36 +238,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AEC39872D7A188B128C430A /* Pods_LedgitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		02408C0E999886688D32A045 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				440E18801682C6FA72C78822 /* Pods_Ledgit.framework */,
-				7EB21902AE594012FF148F96 /* Pods_LedgitTests.framework */,
-				8521A36C51FB5EBE2134AD85 /* Pods_LedgitUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4BF351F33A88F4878B55A3DC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F8E6204D85EEE0A99523E00F /* Pods-Ledgit.debug.xcconfig */,
-				31B35902AAD4A6860DB0AC73 /* Pods-Ledgit.release.xcconfig */,
-				F29C3F89F31358098A8B0B37 /* Pods-LedgitTests.debug.xcconfig */,
-				CD08D377859521F30867A19F /* Pods-LedgitTests.release.xcconfig */,
-				AA493BC4D136EA66D5B690DD /* Pods-LedgitUITests.debug.xcconfig */,
-				93C41B92AC4C35C569819F18 /* Pods-LedgitUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		8D173EC41F99A4E200EC8527 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,8 +367,6 @@
 				8DA3B1BD1F3F875B00FC31AF /* LedgitTests */,
 				8D4E68412230B43F009939BE /* LedgitUITests */,
 				8DA3B1A41F3F875B00FC31AF /* Products */,
-				4BF351F33A88F4878B55A3DC /* Pods */,
-				02408C0E999886688D32A045 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -651,11 +629,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DA3B1CE1F3F875B00FC31AF /* Build configuration list for PBXNativeTarget "Ledgit" */;
 			buildPhases = (
-				83E21ED5E1E04F2D2D15D9F7 /* [CP] Check Pods Manifest.lock */,
 				8DA3B19F1F3F875B00FC31AF /* Sources */,
 				8DA3B1A01F3F875B00FC31AF /* Frameworks */,
 				8DA3B1A11F3F875B00FC31AF /* Resources */,
-				7BEB08FFD5BC12B944CE6A73 /* [CP] Embed Pods Frameworks */,
 				8D4E684C2230B8C8009939BE /* ShellScript */,
 			);
 			buildRules = (
@@ -663,6 +639,16 @@
 			dependencies = (
 			);
 			name = Ledgit;
+			packageProductDependencies = (
+				8D62DDC228FFB3860099CD60 /* SwiftDate */,
+				8D62DDC528FFB39E0099CD60 /* NVActivityIndicatorView */,
+				8D62DDC828FFB3C60099CD60 /* NotificationBannerSwift */,
+				8D62DDCB28FFB3E70099CD60 /* BubbleTransition */,
+				8D62DDCE28FFB4070099CD60 /* AMPopTip */,
+				8D62DDD128FFB42D0099CD60 /* Charts */,
+				8D62DDD428FFB4550099CD60 /* BetterSegmentedControl */,
+				8D62DDD728FFB4810099CD60 /* SkyFloatingLabelTextField */,
+			);
 			productName = Ledgit;
 			productReference = 8DA3B1A31F3F875B00FC31AF /* Ledgit.app */;
 			productType = "com.apple.product-type.application";
@@ -671,7 +657,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8DA3B1D11F3F875B00FC31AF /* Build configuration list for PBXNativeTarget "LedgitTests" */;
 			buildPhases = (
-				1C36A8B1E9985C9EDC60E17E /* [CP] Check Pods Manifest.lock */,
 				8DA3B1B61F3F875B00FC31AF /* Sources */,
 				8DA3B1B71F3F875B00FC31AF /* Frameworks */,
 				8DA3B1B81F3F875B00FC31AF /* Resources */,
@@ -732,6 +717,16 @@
 				Base,
 			);
 			mainGroup = 8DA3B19A1F3F875B00FC31AF;
+			packageReferences = (
+				8D62DDC128FFB3860099CD60 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+				8D62DDC428FFB39E0099CD60 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				8D62DDC728FFB3C60099CD60 /* XCRemoteSwiftPackageReference "NotificationBanner" */,
+				8D62DDCA28FFB3E70099CD60 /* XCRemoteSwiftPackageReference "BubbleTransition" */,
+				8D62DDCD28FFB4070099CD60 /* XCRemoteSwiftPackageReference "AMPopTip" */,
+				8D62DDD028FFB42D0099CD60 /* XCRemoteSwiftPackageReference "Charts" */,
+				8D62DDD328FFB4550099CD60 /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */,
+				8D62DDD628FFB4810099CD60 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
+			);
 			productRefGroup = 8DA3B1A41F3F875B00FC31AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -775,80 +770,9 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1C36A8B1E9985C9EDC60E17E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LedgitTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7BEB08FFD5BC12B944CE6A73 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Ledgit/Pods-Ledgit-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AMPopTip/AMPopTip.framework",
-				"${BUILT_PRODUCTS_DIR}/BetterSegmentedControl/BetterSegmentedControl.framework",
-				"${BUILT_PRODUCTS_DIR}/BubbleTransition/BubbleTransition.framework",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMPopTip.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BetterSegmentedControl.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BubbleTransition.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ledgit/Pods-Ledgit-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		83E21ED5E1E04F2D2D15D9F7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Ledgit-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8D4E684C2230B8C8009939BE /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -862,7 +786,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1012,7 +936,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = LedgitUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.camdendevelopers.LedgitUITests;
@@ -1035,7 +963,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = LedgitUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.camdendevelopers.LedgitUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1095,12 +1027,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1149,10 +1082,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1160,14 +1095,16 @@
 		};
 		8DA3B1CF1F3F875B00FC31AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8E6204D85EEE0A99523E00F /* Pods-Ledgit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = KD674EGM5X;
 				INFOPLIST_FILE = Ledgit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.camdendev.Ledgit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1178,14 +1115,16 @@
 		};
 		8DA3B1D01F3F875B00FC31AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31B35902AAD4A6860DB0AC73 /* Pods-Ledgit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = KD674EGM5X;
 				INFOPLIST_FILE = Ledgit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.camdendev.Ledgit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1196,13 +1135,16 @@
 		};
 		8DA3B1D21F3F875B00FC31AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F29C3F89F31358098A8B0B37 /* Pods-LedgitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = KD674EGM5X;
 				INFOPLIST_FILE = LedgitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.camdendev.LedgitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1212,13 +1154,16 @@
 		};
 		8DA3B1D31F3F875B00FC31AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD08D377859521F30867A19F /* Pods-LedgitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = KD674EGM5X;
 				INFOPLIST_FILE = LedgitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.camdendev.LedgitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1266,6 +1211,116 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D62DDC128FFB3860099CD60 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		8D62DDC428FFB39E0099CD60 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		8D62DDC728FFB3C60099CD60 /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Daltron/NotificationBanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		8D62DDCA28FFB3E70099CD60 /* XCRemoteSwiftPackageReference "BubbleTransition" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andreamazz/BubbleTransition";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		8D62DDCD28FFB4070099CD60 /* XCRemoteSwiftPackageReference "AMPopTip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/andreamazz/AMPopTip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		8D62DDD028FFB42D0099CD60 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+		8D62DDD328FFB4550099CD60 /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gmarm/BetterSegmentedControl";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		8D62DDD628FFB4810099CD60 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D62DDC228FFB3860099CD60 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D62DDC128FFB3860099CD60 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+		8D62DDC528FFB39E0099CD60 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D62DDC428FFB39E0099CD60 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		8D62DDC828FFB3C60099CD60 /* NotificationBannerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D62DDC728FFB3C60099CD60 /* XCRemoteSwiftPackageReference "NotificationBanner" */;
+			productName = NotificationBannerSwift;
+		};
+		8D62DDCB28FFB3E70099CD60 /* BubbleTransition */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D62DDCA28FFB3E70099CD60 /* XCRemoteSwiftPackageReference "BubbleTransition" */;
+			productName = BubbleTransition;
+		};
+		8D62DDCE28FFB4070099CD60 /* AMPopTip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D62DDCD28FFB4070099CD60 /* XCRemoteSwiftPackageReference "AMPopTip" */;
+			productName = AMPopTip;
+		};
+		8D62DDD128FFB42D0099CD60 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D62DDD028FFB42D0099CD60 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		8D62DDD428FFB4550099CD60 /* BetterSegmentedControl */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D62DDD328FFB4550099CD60 /* XCRemoteSwiftPackageReference "BetterSegmentedControl" */;
+			productName = BetterSegmentedControl;
+		};
+		8D62DDD728FFB4810099CD60 /* SkyFloatingLabelTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D62DDD628FFB4810099CD60 /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
+			productName = SkyFloatingLabelTextField;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8DA3B1AD1F3F875B00FC31AF /* Ledgit.xcdatamodeld */ = {

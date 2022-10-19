@@ -28,7 +28,7 @@ class TripBudgetInformationView: UIView {
         titleLabel.numberOfLines = 0
         titleLabel.textColor = .white
         titleLabel.font = .futuraBold13
-        //titleLabel.textAlignment = .center
+        // titleLabel.textAlignment = .center
 
         addSubview(titleLabel)
         titleLabel.snp.makeConstraints { make in

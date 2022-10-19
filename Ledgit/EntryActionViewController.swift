@@ -10,6 +10,7 @@ import UIKit
 import SkyFloatingLabelTextField
 import NotificationBannerSwift
 
+// swiftlint:disable file_length type_body_length
 class EntryActionNavigationController: UINavigationController { }
 
 class EntryActionViewController: UIViewController {
@@ -377,7 +378,7 @@ class EntryActionViewController: UIViewController {
         }
     }
 
-    @IBAction func saveButtonPressed(_ sender: Any) {
+    @IBAction func saveButtonPressed(_ sender: Any) { // swiftlint:disable:this function_body_length
         guard parentTrip?.key != Constants.ProjectID.sample else {
             showAlert(with: LedgitError.cannotAddEntriesToSample)
             return
@@ -390,7 +391,7 @@ class EntryActionViewController: UIViewController {
             let exchangeRate = Double(exchangeRateString),
             let date = dateTextField.text?.strip(),
             let owningTripKey = presenter?.trip.key
-            else { return }
+        else { return }
 
         let pendingLocation = locationTextField.text?.strip() ?? ""
         let location = pendingLocation.isEmpty ? "Unknown" : pendingLocation
@@ -430,7 +431,11 @@ class EntryActionViewController: UIViewController {
             LedgitEntry.Keys.owningTrip: owningTripKey
         ]
 
-        action == .edit ? presenter?.update(entry: entryData) : presenter?.create(entry: entryData)
+        if action == .edit {
+            presenter?.update(entry: entryData)
+        } else {
+            presenter?.create(entry: entryData)
+        }
 
         dismiss(animated: true, completion: nil)
     }

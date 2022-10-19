@@ -13,7 +13,7 @@ enum Platform {
     case coreData
 }
 
-protocol AuthenticationPresenterDelegate: class {
+protocol AuthenticationPresenterDelegate: AnyObject {
     func successfulAuthentication(of user: LedgitUser)
     func displayError(_ error: LedgitError)
 }

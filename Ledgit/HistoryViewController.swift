@@ -10,7 +10,7 @@ import UIKit
 import BetterSegmentedControl
 import SwiftDate
 
-protocol DayTableCellDelegate: class {
+protocol DayTableCellDelegate: AnyObject {
     func selected(entry: LedgitEntry, at point: CGPoint)
 }
 
@@ -161,13 +161,13 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch tableView {
         case dayTableView:
-            let cell = dayTableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.date, for: indexPath) as! DateTableViewCell //swiftlint:disable:this force_cast
+            let cell = dayTableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.date, for: indexPath) as! DateTableViewCell // swiftlint:disable:this force_cast
             let entry = dateEntries[indexPath.section].entries[indexPath.row]
             cell.setup(with: entry)
 
             return cell
         default:
-            let cell = cityTableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.city, for: indexPath) as! CityTableViewCell //swiftlint:disable:this force_cast
+            let cell = cityTableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.city, for: indexPath) as! CityTableViewCell // swiftlint:disable:this force_cast
             let section = cityEntries[indexPath.row]
             cell.setup(with: section)
 

@@ -20,7 +20,7 @@ enum Storyboard: String {
 
     func viewController<Element: UIViewController>(of viewControllerClass: Element.Type) -> Element {
         let storyboardID = (viewControllerClass as UIViewController.Type).storyboardID
-        return instance.instantiateViewController(withIdentifier: storyboardID) as! Element //swiftlint:disable:this force_cast
+        return instance.instantiateViewController(withIdentifier: storyboardID) as! Element // swiftlint:disable:this force_cast
     }
 
     func initialViewController() -> UIViewController? {

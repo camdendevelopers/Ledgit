@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CategorySelectionDelegate: class {
+protocol CategorySelectionDelegate: AnyObject {
     func selected(_ category: String)
 }
 

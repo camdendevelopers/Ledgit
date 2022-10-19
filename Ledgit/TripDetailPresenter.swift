@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TripDetailPresenterDelegate: class {
+protocol TripDetailPresenterDelegate: AnyObject {
     func receivedEntryUpdate()
 }
 
