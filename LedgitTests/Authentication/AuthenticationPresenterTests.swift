@@ -47,21 +47,4 @@ class AuthenticationPresenterTests: XCTestCase {
         XCTAssertTrue(presenterDelegate.didAuthenticate)
         XCTAssertEqual(user, presenterDelegate.authenticatedUser)
     }
-    
-    func testDelegateDidReceiveError() {
-        // Arrange
-        guard let error = AuthErrorCode(rawValue: 17007) else {
-            XCTFail("Error code not generated")
-            return
-        }
-        
-        let ledgitError = manager.handleError(with: error)
-        
-        // Act
-        presenterDelegate.displayError(ledgitError)
-        
-        // Assert
-        XCTAssertTrue(presenterDelegate.didReceiveAuthenticationError)
-        XCTAssertEqual(ledgitError, presenterDelegate.error)
-    }
 }

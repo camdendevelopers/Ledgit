@@ -85,7 +85,6 @@
 		8DDD131C202AB0F600998AA5 /* LedgitColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD131B202AB0F600998AA5 /* LedgitColor.swift */; };
 		8DDD1321202D5CC300998AA5 /* AuthenticationManagerDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD1320202D5CC300998AA5 /* AuthenticationManagerDelegateMock.swift */; };
 		8DDD1323202D5F4E00998AA5 /* AuthenticationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD1322202D5F4E00998AA5 /* AuthenticationPresenterTests.swift */; };
-		8DDD1327202F8B2500998AA5 /* AuthenticationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD1326202F8B2500998AA5 /* AuthenticationManagerTests.swift */; };
 		8DDD132A202F8CE600998AA5 /* LedgitUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD1329202F8CE600998AA5 /* LedgitUserTests.swift */; };
 		8DDD132C202F935100998AA5 /* AuthenticationPresenterDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD132B202F935100998AA5 /* AuthenticationPresenterDelegateMock.swift */; };
 		8DDD1330202F9D6300998AA5 /* AuthenticationPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD132F202F9D6300998AA5 /* AuthenticationPresenterMock.swift */; };
@@ -195,7 +194,6 @@
 		8DDD131B202AB0F600998AA5 /* LedgitColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgitColor.swift; sourceTree = "<group>"; };
 		8DDD1320202D5CC300998AA5 /* AuthenticationManagerDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManagerDelegateMock.swift; sourceTree = "<group>"; };
 		8DDD1322202D5F4E00998AA5 /* AuthenticationPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenterTests.swift; sourceTree = "<group>"; };
-		8DDD1326202F8B2500998AA5 /* AuthenticationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManagerTests.swift; sourceTree = "<group>"; };
 		8DDD1329202F8CE600998AA5 /* LedgitUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LedgitUserTests.swift; sourceTree = "<group>"; };
 		8DDD132B202F935100998AA5 /* AuthenticationPresenterDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenterDelegateMock.swift; sourceTree = "<group>"; };
 		8DDD132F202F9D6300998AA5 /* AuthenticationPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenterMock.swift; sourceTree = "<group>"; };
@@ -557,7 +555,6 @@
 				8DDD132B202F935100998AA5 /* AuthenticationPresenterDelegateMock.swift */,
 				8DDD132F202F9D6300998AA5 /* AuthenticationPresenterMock.swift */,
 				8DDD1322202D5F4E00998AA5 /* AuthenticationPresenterTests.swift */,
-				8DDD1326202F8B2500998AA5 /* AuthenticationManagerTests.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -678,7 +675,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = "Camden Developers";
 				TargetAttributes = {
 					8D4E683F2230B43F009939BE = {
@@ -882,7 +879,6 @@
 				8DDD132C202F935100998AA5 /* AuthenticationPresenterDelegateMock.swift in Sources */,
 				8DDD1321202D5CC300998AA5 /* AuthenticationManagerDelegateMock.swift in Sources */,
 				8DDD132A202F8CE600998AA5 /* LedgitUserTests.swift in Sources */,
-				8DDD1327202F8B2500998AA5 /* AuthenticationManagerTests.swift in Sources */,
 				8DDD13332030B81300998AA5 /* TripActionViewControllerTests.swift in Sources */,
 				8DDD1330202F9D6300998AA5 /* AuthenticationPresenterMock.swift in Sources */,
 				8DDD1323202D5F4E00998AA5 /* AuthenticationPresenterTests.swift in Sources */,
@@ -1003,6 +999,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1064,6 +1061,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
