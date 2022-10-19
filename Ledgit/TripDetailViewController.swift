@@ -50,6 +50,7 @@ class TripDetailViewController: UIViewController {
         let historySegment = LabelSegment(text: "History", normalFont: .futuraMedium16, normalTextColor: LedgitColor.separatorGray,
                                           selectedFont: .futuraMedium16, selectedTextColor: LedgitColor.coreBlue)
 
+        pageSegmentedControl.setOptions([.cornerRadius(8)])
         pageSegmentedControl.segments = [summarySegment, categorySegment, historySegment]
         pageSegmentedControl.addTarget(self, action: #selector(segmentedControlChanged), for: .valueChanged)
     }
